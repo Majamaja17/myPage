@@ -11,13 +11,8 @@
 }
  
 body {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Zona-pro", sans-serif;
 	text-align: center;
-	background-image: url("../images/bg_3.jpg");
-}
-
-.background {
-	background-color: rgba(255, 255, 255, .7);
 }
 
 .container {
@@ -146,6 +141,11 @@ a.nav_icon {
 	margin: 20px;
 }
 
+.nav_icon {
+	position: fixed;
+	right: 92.3%;
+}
+
 /*main_section*/
 
 .main_section {
@@ -154,7 +154,7 @@ a.nav_icon {
 }
 
 h1 {
-	font-size: 75px;
+	font-size: 65px;
 	font-weight: bold;
 	color: #333;
 	margin-bottom: 100px;
@@ -257,26 +257,53 @@ h1 {
 /*blog*/
 
 .my_skills {
-	padding-top: 100px;
+
 	line-height: 30px;
+
 }
 
-/*portfolio*/
+/*Technologies*/
 
-.portfolio {
-
+.technologies_img {
+	height: 100px;
+	width: 100px;
+	border: 2px solid #333;
+	margin-left: 10px;
 }
 
 /*My works*/
 
 .my_works {
+	padding-top: 100px;
+	margin-bottom: 100px;
 
+}
+
+.works_img {
+	border: 2px solid #333;
+	width: 200px;
+	height: 200px;
+	margin-top: 100px;
+}
+
+.works_title {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.github {
+	border: 2px solid #333;
+	width: 40px;
+	height: 30px;
+	background-color: #FFF;
+	border-radius: 20%;
 }
 
 /*About me*/
 
 .about_me {
-	padding: 50px;
+	padding-top: 100px;
+	margin-bottom: 100px;
 }
 
 .my_photo {
@@ -291,16 +318,18 @@ h1 {
 /*contact*/
 
 .contact {
+	padding-top: 100px;
+	margin-bottom: 100px;
 	text-align: center;
-	padding-top: 40px;
 	line-height: 30px;
-	padding-bottom: 50px;
+	text-transform: uppercase;
 }
 
 .contact_header {
 	text-align: center;
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: bold;
+	margin-bottom: 70px;
 }
 
 .left_column_form {
@@ -314,17 +343,26 @@ h1 {
 }
 
 input {
-	border: 2px solid #333;
+	border: 3px solid #333;
 	border-radius: 10%;
 	box-shadow: 0 5px 35px rgba(0,0,0,.2);
+}
+
+.contact .github {
+	margin-top: 50px;
+}
+
+.contact .mail,
+.contact .phone {
+	float: left;
+	margin-left: 20px;
+	font-size: 20px;
 }
 
 /*footer*/
 
 footer {
 	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
 }
 
 /*btn*/
@@ -346,62 +384,33 @@ footer {
 	width: 20px;
 }
 
-.contact_button {
+.cv {
+	border-radius: 50%;
 	border: 2px solid #333;
+	cursor: pointer;
+	z-index: 3;
+	height: 60px;
+	width: 60px;
+	position: absolute;
+    bottom: 65%;
+    left: 3.3%;
     background-color: #FFF;
-    border-radius: 10%;
-    padding: 10px;
-    cursor: pointer;
-}
-
-#panel {
     position: fixed;
-    top: 70px;
-    right: -252px;
-    z-index: 3;
-    transition: right 0.5s ease-out 0s;
+
 }
 
-#panel2 {
+.btn_contact {
+	border-radius: 50%;
+	border: 2px solid #333;
+	cursor: pointer;
+	z-index: 3;
+	height: 60px;
+	width: 60px;
+	position: absolute;
+    bottom: 50%;
+    left: 3.3%;
+    background-color: #FFF;
     position: fixed;
-    top: 20px;
-    right: -252px;
-    z-index: 3;
-    transition: right 0.5s ease-out 0s;
-}
- 
-#panel:hover {
-    right: 0;
-}
- 
-#panel2:hover {
-    right: 0;
-}
-
-#content {
-    width: 250px;
-    height: 100px;
-    padding: 10px;
-    border: 2px solid #333;
-    border-right: none;
-    z-index: 3;
-    background-color: #FFF;
-    position: relative;
-    border-radius: 10px 0 0 10px;
-}
- 
-#title {
-    width: 50px;
-    border: 2px solid #333;
-    background-color: #FFF;
-    font-weight: bold;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: center;
-    position: relative;
-    top: 55px;
-    left: -50px;
-    z-index: 3;
 }
 
 /*responsive*/

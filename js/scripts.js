@@ -22,14 +22,14 @@ $(function(){
 	var carouselList = $("#carousel1 ul");
 
 	function changeSlide1() {
-		carouselList.animate({"marginLeft":-500}, 500, moveFirstSlide1);
+		carouselList.animate({"marginBottom":500}, 500, moveFirstSlide1);
 	}
 
 	function moveFirstSlide1() {
 		var firstItem = carouselList.find("li:first");
 		var lastItem = carouselList.find("li:last");
 		lastItem.after(firstItem)
-		carouselList.css({marginLeft:0});
+		carouselList.css({marginBottom:0});
 	}
 
 	setInterval(changeSlide1, 3000);
