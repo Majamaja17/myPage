@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+	box-sizing: border-box;
+}
+
+.row::before,
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+ 
+body {
+	font-family: "Zona-pro", sans-serif;
+	text-align: center;
+	background-color: #FAF1DE;
+	padding-bottom: 100px;
+	padding-top: 100px;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 100px 50px;
+	background-color: #FFF;
+}
+
+[class*="col-"] {
+	float: left;
+	min-height: 1px;
+}
+
+/*grid*/
+.col-1 { width: 8.33%; }
+
+.col-2 { width: 16.66%; }
+
+.col-3 { width: 25%; }
+
+.col-4 { width: 33.33%; }
+
+.col-5 { width: 41.66%; }
+
+.col-6 { width: 50%; }
+
+.col-7 { width: 58.33%; }
+
+.col-8 { width: 66.66%; }
+
+.col-9 { width: 75%; }
+
+.col-10 { width: 83.33%; }
+
+.col-11 { width: 91.66%; }
+
+.col-12 { width: 100%; }
+
+/*Offests*/
+
+.col-offset-0 { margin-left: 0 ; }
+
+.col-offset-1 { margin-left: 8.33%; }
+
+.col-offset-2 { margin-left: 16.66%; }
+
+.col-offset-3 { margin-left: 25%; }
+
+.col-offset-4 { margin-left: 33.33%; }
+
+.col-offset-5 { margin-left: 41.66%; }
+
+.col-offset-6 { margin-left: 50%; }
+
+.col-offset-7 { margin-left: 58.33%; }
+
+.col-offset-8 { margin-left: 66.66%; }
+
+.col-offset-9 { margin-left: 75%; }
+
+.col-offset-10 { margin-left: 83.33%; }
+
+.col-offset-11 { margin-left: 91.66%; }
+
+/*nav*/
+
+a.nav_icon {
+	margin-top: 20px;
+	margin-left: 20px;
+	padding: 10px;
+    z-index: 3;
+    border: 2px solid #333;
+    background-color: #FFF;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.topnav #myLinks {
+  display: none;
+  overflow: hidden;
+  position: relative;
+}
+
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+.topnav a:hover {
+	color: #BF0000;
+}
+
+.menu_inner {
+	text-decoration: none;
+	color: #333;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 20px;
+	padding-top: 40px;
+	float: left;
+}
+
+.last_a {
+	margin-right: 470px;
+}
+
+.nav_icon {
+	position: fixed;
+	top: 4%;
+	left: 91%;
+}
+
+.about_me {
+	padding-top: 100px;
+	margin-bottom: 100px;
+}
+
+.text_about_me {
+	padding: 50px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 35px;
+	font-weight: bold;
+	margin-bottom: 200px;
+	text-transform: uppercase;
+	color: #333;
+}
+
+/*carousel 1*/
+
+.container_carousel1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.slider-wrapper1 {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+
+#carousel1 {
+  width: 500%;
+  height: 100%;
+}
+
+.slide1 {
+  width: 500;
+  height: 100%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide1 img {
+	width: 100%;
+}
+
+.buttons {
+	padding-bottom: 100px;
+	padding-top: 100px;
+	margin-top: 100px;
+	background-color: #b78880c2;
+}
+
+.contact {
+	border-left: 3px solid #b78880;
+	border-right: 3px solid #b78880;
+}
+
+/*footer*/
+
+footer {
+	text-align: center;
+}
+
+/*btn*/
+
+.btn_scroll {
+	padding: 15px;
+	position: fixed;
+    top: 93%;
+    left: 92%;
+    z-index: 3;
+    border: 2px solid #333;
+    background-color: #FFF;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.btn_scroll img {
+	height: 20px;
+	width: 20px;
+}
+/*responsive*/
+
+@media (min-width: 1200px) {
+	
+	.container {
+		max-width: 1065px;	
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+	.col-m-1 { width: 8.33%; }
+
+	.col-m-2 { width: 16.66%; }
+
+	.col-m-3 { width: 25%; }
+
+	.col-m-4 { width: 33.33%; }
+
+	.col-m-5 { width: 41.66%; }
+
+	.col-m-6 { width: 50%; }
+
+	.col-m-7 { width: 58.33%; }
+
+	.col-m-8 { width: 66.66%; }
+
+	.col-m-9 { width: 75%; }
+
+	.col-m-10 { width: 83.33%; }
+
+	.col-m-11 { width: 91.66%; }
+
+	.col-m-12 { width: 100%; }
+
+	.container {
+		max-width: 900px;	
+		margin: 0 auto;
+	}
+
+	.topnav a {
+		margin-left: 0px;
+	}
+
+	.btn_scroll {
+		left: 2%;
+	}
+
+	.cv {
+    	left: 1.8%;
+    }
+
+    .btn_contact {
+    	left: 1.8%;
+    }
+}
+
+@media (max-width: 767px) {
+
+	.col-s-1 { width: 8.33%; }
+
+	.col-s-2 { width: 16.66%; }
+
+	.col-s-3 { width: 25%; }
+
+	.col-s-4 { width: 33.33%; }
+
+	.col-s-5 { width: 41.66%; }
+
+	.col-s-6 { width: 50%; }
+
+	.col-s-7 { width: 58.33%; }
+
+	.col-s-8 { width: 66.66%; }
+
+	.col-s-9 { width: 75%; }
+
+	.col-s-10 { width: 83.33%; }
+
+	.col-s-11 { width: 91.66%; }
+
+	.col-s-12 { width: 100%; }
+
+
+	.container {
+		border-left: none;
+		background-color: red;
+
+	}
+	
+	
+}
+
+
